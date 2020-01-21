@@ -1,0 +1,39 @@
+body{
+    background:black;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 500px;
+    height: 100px;
+    background: white;  
+    overflow: hidden;
+    position:relative;
+}
+
+.social-box{
+    width:100%;
+    display: inline-block;    
+    position:absolute;
+}
+
+.box-icn{
+    background:yellow;
+    float: left;
+    width: 66px;
+    padding: 15px 20px;
+}
+
+.box-text{
+    background:white;
+    display:flex;    
+    height:100px;
+}
+
+.box-text span{    
+    color:black;
+    font-size:46px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    margin:auto;
+}

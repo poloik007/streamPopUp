@@ -3,10 +3,9 @@ body{
     box-sizing: border-box;
 }
 
-.container{
+#container{
     width: 500px;
-    height: 100px;
-    background: white;  
+    height: 100px;    
     overflow: hidden;
     position:relative;
 }

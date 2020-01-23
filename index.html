@@ -10,9 +10,9 @@
 </head>
 <body>
 
-    <div class="container">
+    <div id="container" class="animated zoomIn duration-2s">
 
-        <div class="social-box">
+        <div class="social-box animated">
             <div class="box-icn">
                 <img src="instagram.svg" alt="social-instagram" />
             </div>
@@ -21,7 +21,7 @@
             </div>
         </div>
 
-        <div class="social-box animated infinite slideInRight delay-5s">
+        <div id="twitch" class="social-box animated slideInRight delay-5s">
             <div class="box-icn">
                 <img src="twitch.svg" alt="social-twitch" />
             </div>
@@ -31,6 +31,30 @@
         </div>
 
     </div>
+
+
+    <script>        
+            var second = 0;            
+
+            setInterval(function(){                
+                second++;
+
+                var container = document.getElementById('container');
+                var twitch = document.getElementById('twitch')
+
+                if (container.classList.contains('zoomOut')) {
+                    container.classList.replace('zoomOut','zoomIn'); 
+                    twitch.classList.replace('zoomOut','slideInRight');
+                }else{
+                    container.classList.replace('zoomIn','zoomOut');  
+                    //TODO seems to not be working properly timing below                                      
+                    setTimeout(300000)
+                    twitch.classList.replace('slideInRight','zoomOut');
+                    
+                }                
+            }, 20000)                
+    </script>
+
     
 </body>
 </html>
